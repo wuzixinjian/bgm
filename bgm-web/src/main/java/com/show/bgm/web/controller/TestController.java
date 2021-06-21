@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-
+    /**
+     * test提交
+     * @param name
+     * @return
+     */
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public User test(@RequestParam(value = "name")String name){
         CommomResult cr = new CommomResult();
