@@ -1,0 +1,31 @@
+my-config: ceshi auto refresh dev
+#spring.jpa.hibernate.ddl-auto: create
+spring.jpa.hibernate.ddl-auto: update
+spring.jackson.date-format: yyyy-MM-dd HH:mm:ss
+spring.jackson.time-zone: GMT+8
+spring.servlet.multipart.max-file-size: 10MB
+spring.servlet.multipart.max-request-size: 10MB
+#spring.jpa.hibernate.ddl-auto: update
+spring.jpa.show-sql: true
+spring.jpa.properties.hibernate.dialect: com.bgyfw.app.one.backend.api.code.config.MySQL5DialectUtf8mb4
+#spring.jpa.properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+logging.config: http://127.0.0.1:21888/one-backend-api-web/dev/develop/log4j2-spring.xml
+server.port: 8080
+#druid datasouce database settings begin
+spring.datasource.druid.db-type: com.alibaba.druid.pool.DruidDataSource
+spring.datasource.druid.driverClassName: com.mysql.jdbc.Driver
+spring.datasource.druid.url: jdbc:mysql://localhost:3306/yuexiu-02?allowMultiQueries=true&autoReconnect=true&characterEncoding=utf-8
+spring.datasource.druid.username: root
+spring.datasource.druid.password: root
+
+#文件路径
+ygj.file.path: /Users/liubing/Documents/yuexiu/images/
+#erp
+ygj.erp.datasource.driverClassName: com.mysql.jdbc.Driver
+ygj.erp.datasource.url: jdbc:mysql://localhost:3306/demo?allowMultiQueries=true&autoReconnect=true&characterEncoding=utf-8
+ygj.erp.datasource.username: root
+ygj.erp.datasource.password: root
+
+#spring.datasource.druid.url: jdbc:mysql://106.53.86.178:3306/housekeeper?allowMultiQueries=true&autoReconnect=true&characterEncoding=utf-8&useSSL=false
+#spring.datasource.druid.username: housekeeper
+#spring.datasource.druid.password: yx123456
