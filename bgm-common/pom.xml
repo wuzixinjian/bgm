@@ -12,6 +12,11 @@
     <name>bgm-common</name>
     <description>bgm-common project for bgm</description>
 
+    <parent>
+        <groupId>com.show.bgm</groupId>
+        <artifactId>bgm</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
     <dependencies>
 
